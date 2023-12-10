@@ -45,7 +45,7 @@ breedSelector.addEventListener('change', ev => {
     .then(cats => {
       const catArray = cats.map(cat => {
         console.log(JSON.stringify(cat));
-        return `<img class = "image" src ="${cat.url}" width = "400px" heigth = "400px"></img><div class = "content"><h2>Cat name: ${cat.breeds[0].name}</h2><p class = "text">${cat.breeds[0].description}</p></div>`;
+        return `<img class = "image" src ="${cat.url}" width = "400px" heigth = "400px"></img><div class = "content"><h2>Cat name: ${cat.breeds[0].name}</h2><p class = "text">${cat.breeds[0].description}</p></br><p><b>Temperament: </b>${cat.breeds[0].temperament}</p></div>`;
       });
       catInfo.innerHTML = catArray.join('');
     })
