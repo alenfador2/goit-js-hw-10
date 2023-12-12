@@ -1,5 +1,4 @@
 body {
-  position: relative;
   background: linear-gradient(90deg, rgb(5, 66, 28), #000000);
   max-width: 1400px;
   display: block;
@@ -31,6 +30,9 @@ body {
   box-shadow: inset 5px 5px 10px rgba(248, 248, 248, 0.3);
   color: white;
 }
+.header {
+  margin-top: 0;
+}
 .loader {
   width: 48px;
   height: 48px;
@@ -46,9 +48,9 @@ body {
   content: '';
   position: absolute;
   box-sizing: border-box;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  left: 20px;
+  top: 31;
+  /* transform: translate(-50%, -50%); */
   border: 10px solid transparent;
   border-right-color: #fff;
   transform: rotate(-40deg);
