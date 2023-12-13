@@ -17,6 +17,12 @@ body {
 .image {
   border: 3px solid black;
   box-shadow: 5px 0 10px rgba(248, 248, 248, 0.3);
+  display: block;
+}
+.main-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
 .text,
 .header,
